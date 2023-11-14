@@ -1,0 +1,101 @@
+<html>
+<head>
+<h1>Noel's about me webpage</h1>
+<style>
+#picPlaceHolder{
+    width: 100px;
+    height:100px;
+}
+body{
+    background-color: lightblue;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<script>
+var isnoel = true; // check if the picture is noel or ethan
+
+function myFunction(){
+
+    if(isnoel){//if the picture is noel, change it to ethan
+
+        document.getElementById("picPlaceHolder").src="ethan.png";
+
+        isnoel = false;
+
+    }else{ //if the picture is ethan, change it to noel
+
+        document.getElementById("picPlaceHolder").src="noel.png";
+
+        isnoel=true;
+
+    }
+
+}
+</script>
+</head>
+<body>
+    <img id="picPlaceHolder" src="noel.png">
+ <br>
+ <button onclick="myFunction()">change image</button>
+ <ul>
+   <li> Here is a list of facts about me and my interests:
+   <br> I have two dads and one twin brother, Ethan, we were both
+    born on the 29th of December 2009. A lot of my family is
+    chosen and most of the people who are related to us we 
+    haven’t really known until recently. Ethan is currently
+    going to the same school as me but we don’t have many 
+    classes together because we’d probably get tired of each
+    other quickly.
+    </li>
+</ul>
+<hr>
+<ul>
+   <li>I’ve known one of my friends since elementary school and 
+    have known another one since 6th grade. I’ve basically 
+    been with these friends since middle school and even a 
+    bit before middle school.</li>
+</ul>
+<hr>
+<ul>
+   <li>I’m currently going to Eastside Prep School; many kids 
+    went there in 5th grade, but I joined in 6th grade.
+    It’s a really nice school experience but its across 
+    the 520 bridge which can make driving there and back 
+    a risk for traffic.</li>
+</ul>
+<hr>
+<ul>
+   <li>I’m interested in music and film making.
+    I started piano because I just wanted something to do,
+    I’m not good at it though, but I like film because I grew 
+    up with a lot of movies and television in my life.</li>
+</ul>
+<hr>
+<ul>
+   <li>I’m not sure what I want to be when I grow up, but I really 
+    just want a stable job that isn’t very monotonous. I wouldn’t
+    want to do a monotonous job because school has already been 
+    like that for many years. Going through school I think ill
+    be able to find and interest that can be a job.</li>
+</ul>
+<hr>
+<ol>
+Numbers ranked 1-10:
+<li>6</li>
+<li>5</li>
+<li>8</li>
+<li>10</li>
+<li>9</li>
+<li>4</li>
+<li>2</li>
+<li>3</li>
+<li>1</li>
+<li>7</li>
+</ol>
+</body>
+</html>
